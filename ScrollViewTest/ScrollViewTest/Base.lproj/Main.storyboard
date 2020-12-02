@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollViewTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l2B-eX-5yj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PLT_101" translatesAutoresizingMaskIntoConstraints="NO" id="EdM-kL-fne">
+                                        <rect key="frame" x="0.0" y="0.0" width="1200" height="1800"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="EdM-kL-fne" secondAttribute="bottom" id="4hd-SQ-ehj"/>
+                                    <constraint firstItem="EdM-kL-fne" firstAttribute="leading" secondItem="l2B-eX-5yj" secondAttribute="leading" id="IQp-Bk-Yvn"/>
+                                    <constraint firstItem="EdM-kL-fne" firstAttribute="top" secondItem="l2B-eX-5yj" secondAttribute="top" id="bWa-Vj-8aJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="EdM-kL-fne" secondAttribute="trailing" id="i9r-0q-GB7"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l2B-eX-5yj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IBj-bj-lxV"/>
+                            <constraint firstItem="l2B-eX-5yj" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="K8o-Jq-DGx"/>
+                            <constraint firstItem="l2B-eX-5yj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NbL-4P-FDN"/>
+                            <constraint firstItem="l2B-eX-5yj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ofS-9e-5t9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pictureView" destination="EdM-kL-fne" id="65x-5a-9cC"/>
+                        <outlet property="scrollView" destination="l2B-eX-5yj" id="rcN-Pm-gJR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PLT_101" width="1200" height="1800"/>
+    </resources>
+</document>
